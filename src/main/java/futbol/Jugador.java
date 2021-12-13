@@ -1,6 +1,6 @@
 package futbol;
 
-public class Jugador extends Futbolista {
+public class Jugador extends Futbolista{
     public short golesMarcados;
     public byte dorsal;
 
@@ -23,4 +23,7 @@ public class Jugador extends Futbolista {
                 " con dorsal =" + dorsal +
                 ". Ha marcado " + golesMarcados;
     }
+
+
+
 }

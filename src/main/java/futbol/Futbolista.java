@@ -2,7 +2,7 @@ package futbol;
 
 import java.util.Objects;
 
-public class Futbolista {
+public class Futbolista implements Comparable<Futbolista>{
     private String nombre;
     private int edad;
     private String posicion;
@@ -65,7 +65,17 @@ public class Futbolista {
         }
     }
 
+    public boolean jugarConLasManos(){
+        if (this.getPosicion().equals("Portero")){
+            return true;
+        } else {
+            return false;
+        }
+    }
 
 
-
+    @Override
+    public int compareTo(Futbolista o) {
+        return 0;
+    }
 }
